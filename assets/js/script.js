@@ -70,5 +70,10 @@ ham.addEventListener('click', function () {
 
   ham.classList.toggle('active');
   nav.classList.toggle('active');
-  document.getElementById("nav-wrapper").classList.toggle("display");
+  // document.getElementById("nav-wrapper").classList.toggle("display");
 });
+
+// document.querySelector('.js-li').addEventListener('click', function () {
+//   console.log('click');
+// });
+

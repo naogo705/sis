@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-    font-family: 游ゴシック体, "Yu Gothic", YuGothic, Helvetica, Arial, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, sans-serif;
+  font-family: sans-serif;
 }
 p {
   font-size: 16px;
@@ -57,6 +57,9 @@ button:hover {
 .flex {
   display: flex;
   justify-content: space-between;
+}
+.lHeight {
+  line-height: 2!important;
 }
 
 /* 背景 */
@@ -274,7 +277,7 @@ button:hover {
 /*----- hedaer -----*/
 header > div {
   position: fixed;
-  top: 10px;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 5;
@@ -283,19 +286,23 @@ header > div {
   align-items: center;
   border-radius: 30px;
   background-color: #fff;
-  box-shadow: 0px 0px 2px rgb(0 0 0 / 10%);
+  box-shadow: 0px 0px 3px rgb(0 0 0 / 20%);
 }
 
 header nav a {
-  padding: 0 10px;
+  padding: 0 15px;
   color: #000;
   font-weight: bold;
   font-size: 12px;
 }
 
-header li:last-child a {
-  padding: 5px 10px;
+header li:last-child {
+  margin-left: 15px;
+}
+header .btnPink {
+  padding: 10px 20px;
   color: #fff;
+  font-size: 12px;
   border-radius: 30px;
   background-color: #e27191;
 }
@@ -307,23 +314,38 @@ header h2 a {
 .btn-hum {
   display: none;
 }
+.sp-sns {
+  display: none;
+}
+#js-nav {
+  display: none;
+}
 
 @media screen and (max-width: 768px) {
   header h2 a {
-    font-size: 14px;
+    font-size: 20px;
   }
   header > div {
+    top: 15px;
     width: 95%;
-    padding: 10px 20px;
+    padding: 10px 25px;
+  }
+  header li:last-child {
+    margin-left: 0;
+    margin-top: 60px;
   }
   .btn-hum {
     display: block;
     width: 30px;
     background-color: unset;
+    position: fixed;
+    top: 29px;
+    right: 35px;
+    z-index: 10;
   }
   .btn-hum span {
     width: 100%;
-    height: 1px;
+    height: 3px;
     background-color: #000;
     position: relative;
     transition: ease .4s;
@@ -334,7 +356,7 @@ header h2 a {
     top: 0;
   }
   .btn-hum span:nth-child(2) {
-    margin: 8px 0;
+    margin: 7px 0;
   }
   .btn-hum span:nth-child(3) {
     top: 0;
@@ -347,7 +369,7 @@ header h2 a {
     opacity: 0;
   }
   .btn-hum.active span:nth-child(3) {
-    top: -13px;
+    top: -15px;
     transform: rotate(-45deg);
   }
   #js-nav {
@@ -356,58 +378,47 @@ header h2 a {
     left: 0;
     top: 0;
     width: 100%;
-    height: auto;
+    height: 100vh;
     transform: translateY(-110%);
-    background-color: #fff;
+    background-color: #f8f5eb;
     transition: ease .4s;
   }
   #js-nav::after {
     content: '';
     width: 100%;
     height: 100%;
-    background-color: #fff;
-  }
-  #nav-wrapper::before,
-  #nav-wrapper::after {
-    content: "";
-    width: 1px;
-    height: calc(100vh + 1px);
-    display: flex;
-  }
-  #nav-wrapper {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: #fff;
-    display: none;
-    align-items: center;
-    overscroll-behavior: contain;
-    overflow-y: scroll;
-    z-index: 4;
-  }
-  #nav-wrapper.display {
-    display: flex;
+    background-color: #f8f5eb;
   }
   #js-nav.active {
+    display: block;
     transform: translateY(0);
     z-index: 10;
   }
   #js-nav .flex_sp1 {
-    margin: 50px 0;
-    padding: 50px;
+    margin: 50px 0 0;
+    padding: 50px 50px 0;
+    text-align: center;
   }
   #js-nav li {
     margin-bottom: 30px;
   }
   #js-nav li a {
     font-size: 16px;
+    padding: 15px 40px;
   }
   .btn-hum.active {
     display: block;
+  }
+  .sp-sns {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 200px;
+    margin: auto;
+  }
+  .sp-sns li {
+    width: 30px;
+    margin: 0 !important;
   }
 }
 
@@ -435,6 +446,7 @@ h1 {
 #kv > .inner1000 {
   position: relative;
   width: fit-content;
+  height: 75vh;
   padding: 220px 20px 130px;
 }
 #kv > .inner1000::before,
@@ -443,7 +455,7 @@ h1 {
   position: absolute;
   top: 120px;
   width: 150px;
-  height: 400px;
+  height: 450px;
   background-size: contain;
   background-repeat: no-repeat;
   z-index: 1;
@@ -455,6 +467,10 @@ h1 {
 #kv > .inner1000::after {
   right: -170px;
   background-image: url('../img/kv-girl.png');
+}
+#kv > .inner1000 > a {
+  display: block;
+  text-align: center;
 }
 
 /*----- about -----*/
@@ -562,6 +578,7 @@ h1 {
   color: #d07992;
   font-weight: bold;
   font-size: 30px;
+  font-family: Roboto;
 }
 #pr td:last-child span {
   color: #000;
@@ -569,7 +586,14 @@ h1 {
   font-size: 14px;
   padding: 0 5px;
 }
-
+.monthly {
+  display: inline-block;
+  font-size: 13px;
+}
+.yen {
+  font-size: 20px !important;
+  padding: 0 !important;
+}
 
 /*----- flow -----*/
 #fl .inner75 > div:first-child {
@@ -753,6 +777,10 @@ h1 {
     margin: auto;
     font-size: 14px;
   }
+  #kv > .inner1000 {
+    height: initial;
+    padding: 220px 20px 150px 35px;
+  }
   #kv > .inner1000::before,
   #kv > .inner1000::after {
     content: none;
@@ -760,6 +788,9 @@ h1 {
   #kv::before,
   #kv::after {
     content: none;
+  }
+  #kv .txt {
+    margin: 10px auto 30px;
   }
   #ab .flex_sp1 > div:first-child .flex li {
     padding: 10px 15px;
@@ -781,6 +812,9 @@ h1 {
   #pr td:first-child p {
     font-size: 14px;
   }
+  .monthly {
+    display: block;
+  }
   #co .flex_sp1 {
     display: flex;
     flex-direction: column-reverse;
@@ -797,6 +831,9 @@ h1 {
     margin: 40px 20px 0;
   }
   #qa button {
+    padding: 15px 15px 15px 35px;
+  }
+  #qa ul li li {
     padding: 15px 15px 15px 35px;
   }
   #qa button::before {
@@ -848,7 +885,7 @@ h1 {
     content: '';
     position: absolute;
     left: 50%;
-    top: 100px;
+    top: 120px;
     transform: translateX(-50%);
     width: 50px;
     height: 50px;
@@ -881,7 +918,7 @@ h1 {
   margin: 50px auto 100px ;
 }
 #legal .inner1000 {
-  padding: 0 20px 150px;
+  padding: 0 20px 0;
 }
 #legal h1 {
   margin-bottom: 50px;
