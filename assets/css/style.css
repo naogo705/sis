@@ -476,7 +476,61 @@ h1 {
   justify-content: center;
   align-items: center;
 }
+#ab .point li {
+  position: relative;
+  width: 42%;
+  margin: 100px 0 100px;
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url('../img/ab-mokumoku.png');
 
+}
+#ab .point li:first-child::before,
+#ab .point li:last-child::before {
+  content: '';
+  position: absolute;
+  width: 150px;
+  height: 50px;
+  top: 40px;
+  left: 30px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#ab .point li:first-child::after,
+#ab .point li:last-child::after {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  bottom: -90px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#ab .point li:first-child::before {
+  background-image: url('../img/ab-point-01.png');
+}
+#ab .point li:last-child::before {
+  background-image: url('../img/ab-point-02.png');
+}
+#ab .point li:first-child::after {
+  right: -50px;
+  background-image: url('../img/ab-girl.png');
+}
+#ab .point li:last-child::after {
+  left: -50px;
+  background-image: url('../img/ab-boy.png');
+}
+#ab .point div {
+  padding: 80px 70px 70px;
+}
+#ab .point div > p:first-child {
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+}
 
 /*=========================
  interview
@@ -785,6 +839,12 @@ h1 {
   }
   #ab .flex_sp1 > div:last-child {
     margin: 50px 0;
+  }
+  #ab .point li:first-child::after {
+    right: 0;
+  }
+  #ab .point li:last-child::after {
+    left: 0;
   }
   #in .flex_sp1 > li {
     margin-bottom: 30px;
