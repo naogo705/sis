@@ -319,6 +319,7 @@ header h2 a {
   .btn-hum {
     display: block;
     width: 30px;
+    background-color: unset;
   }
   .btn-hum span {
     width: 100%;
