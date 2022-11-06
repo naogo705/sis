@@ -5,10 +5,14 @@ body {
 p {
   font-size: 16px;
   line-height: 1.7;
+  color: #2c1c0a;
 }
 a:hover,
 button:hover {
   opacity: .6;
+}
+.btn-hum:hover {
+  opacity: 1;
 }
 
 /*=========================
@@ -257,7 +261,7 @@ header > div {
 
 header nav a {
   padding: 0 15px;
-  color: #000;
+  color: #2c1c0a;
   font-weight: bold;
   font-size: 12px;
 }
@@ -274,7 +278,7 @@ header .btnPink {
 }
 
 header h2 a {
-  color: #000;
+  color: #2c1c0a;
   font-size: 20px;
 }
 .btn-hum {
@@ -312,7 +316,7 @@ header h2 a {
   .btn-hum span {
     width: 100%;
     height: 3px;
-    background-color: #000;
+    background-color: #2c1c0a;
     position: relative;
     transition: ease .4s;
     display: block;
@@ -399,6 +403,7 @@ header h2 a {
 h1 {
   text-align: center;
   font-size: 60px;
+  color: #2c1c0a;
 }
 
 #kv {
@@ -460,6 +465,7 @@ h1 {
   font-size: 15px;
   white-space: nowrap;
   border-radius: 5px;
+  color: #2c1c0a;
   background-color: #fff;
 }
 #ab .flex_sp1 > div:first-child .flex li:nth-child(2n) {
@@ -524,11 +530,12 @@ h1 {
 #ab .point div {
   padding: 80px 70px 70px;
 }
-#ab .point div > p:first-child {
-  margin-bottom: 20px;
+#ab .point-ttl {
+  margin: 20px 0;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 22px;
   line-height: 1.4;
+  color: #545149;
   text-align: center;
 }
 
@@ -560,7 +567,7 @@ h1 {
 }
 #in .spec span {
   font-weight: normal;
-  color: #000;
+  color: #2c1c0a;
   padding-left: 10px;
 }
 #in .spec:first-child {
@@ -571,6 +578,7 @@ h1 {
   display: block;
   padding-left: 0;
   font-size: 14px;
+  color: #2c1c0a;
 }
 
 /*=========================
@@ -609,7 +617,7 @@ h1 {
   font-family: Roboto;
 }
 #pr td:last-child span {
-  color: #000;
+  color: #2c1c0a;
   font-weight: normal;
   font-size: 14px;
   padding: 0 5px;
@@ -682,6 +690,7 @@ h1 {
 #qa ul li li {
   border-bottom: 1px solid #efefef;
   padding: 15px 15px 15px 50px;
+  color: #2c1c0a;
 }
 #qa ul:nth-of-type(1) li.active li:last-child{
   border-bottom: none;
@@ -691,6 +700,7 @@ h1 {
   width: 100%;
   padding: 15px 15px 15px 50px;
   text-align: left;
+  color: #2c1c0a;
   background-color: inherit;
   cursor: pointer;
 }
@@ -840,11 +850,24 @@ h1 {
   #ab .flex_sp1 > div:last-child {
     margin: 50px 0;
   }
+  #ab .point li:first-child::before,
+  #ab .point li:last-child::before {
+    content: none;
+  }
   #ab .point li:first-child::after {
     right: 0;
   }
   #ab .point li:last-child::after {
     left: 0;
+  }
+  #ab .point div > p:first-child img {
+    width: auto;
+    height: 20px;
+    margin: auto;
+  }
+  #ab .point-ttl {
+    margin: 15px 0;
+    font-size: 20px;
   }
   #in .flex_sp1 > li {
     margin-bottom: 30px;
