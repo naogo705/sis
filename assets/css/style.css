@@ -373,7 +373,7 @@ header h2 a {
     transform: rotate(-45deg);
   }
   #js-nav {
-    position: absolute;
+    position: fixed;
     right: 0;
     left: 0;
     top: 0;
