@@ -186,15 +186,6 @@ button:hover {
   .c-ttl img {
     max-height: 50px;
   }
-  #ab .c-ttl::before,
-  #in .c-ttl::before,
-  #pr .c-ttl::before,
-  #fl .c-ttl::before,
-  #co .c-ttl::before,
-  #qa .c-ttl::before {
-    top: -30px;
-    font-size: 40px;
-  }
   .wrap::before {
     width: 300px;
     height: 500px;
