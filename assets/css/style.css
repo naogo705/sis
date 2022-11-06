@@ -11,7 +11,9 @@ button:hover {
   opacity: .6;
 }
 
-/* common style */
+/*=========================
+ common style
+ =========================*/
 .c-ttl {
   margin-bottom: 50px;
 }
@@ -61,8 +63,6 @@ button:hover {
 .lHeight {
   line-height: 2!important;
 }
-
-/* 背景 */
 .bg-white {
   background-color: #fff;
 }
@@ -86,6 +86,9 @@ button:hover {
   position: relative;
 }
 
+/*=========================
+ decoration
+ =========================*/
 .wrap::before,
 .wrap::after,
 .bg-deco#in::before,
@@ -100,7 +103,6 @@ button:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
-
 .wrap::before {
   left: 0;
   width: 37%;
@@ -180,9 +182,6 @@ button:hover {
   .flex_sp1 > li {
     width: 100% !important;
   }
-  .c-ttl {
-    margin-bottom: 20px;
-  }
   .c-ttl img {
     max-height: 50px;
   }
@@ -236,10 +235,12 @@ button:hover {
     bottom: -10px;
     height: 50px;
     background-image: url('../img/deco/co-btm-sp.png');
-}
+  }
 }
 
-/*----- hedaer -----*/
+/*=========================
+  header
+ =========================*/
 header > div {
   position: fixed;
   top: 20px;
@@ -392,7 +393,9 @@ header h2 a {
   width: 100%;
   posiiton: relative;
 }
-/*----- KV -----*/
+/*=========================
+ kv
+ =========================*/
 h1 {
   text-align: center;
   font-size: 60px;
@@ -438,7 +441,9 @@ h1 {
   text-align: center;
 }
 
-/*----- about -----*/
+/*=========================
+ about
+ =========================*/
 #ab .flex_sp1 > div:first-child {
   width: 56%;
   text-align: center;
@@ -473,7 +478,9 @@ h1 {
 }
 
 
-/*----- interview -----*/
+/*=========================
+ interview
+ =========================*/
 #in .flex_sp1 > li {
   width: calc((100% - 40px) / 3);
   padding: 20px;
@@ -512,7 +519,9 @@ h1 {
   font-size: 14px;
 }
 
-/* price */
+/*=========================
+ price
+ =========================*/
 
 #pr table {
   width: 60%;
@@ -560,7 +569,9 @@ h1 {
   padding: 0 !important;
 }
 
-/*----- flow -----*/
+/*=========================
+ flow
+ =========================*/
 #fl .inner75 > div:first-child {
   padding: 0 10px;
 }
@@ -569,7 +580,9 @@ h1 {
   margin: 20px auto 0;
   padding: 0;
 }
-/*----- contact -----*/
+/*=========================
+ contact
+ =========================*/
 
 .bg-beige#co .inner1000 {
   padding: 100px 20px 150px 20px;
@@ -596,6 +609,10 @@ h1 {
   margin: 20px 0 0;
   white-space: nowrap;
 }
+
+/*=========================
+ Q&A
+ =========================*/
 #qa ul {
   width: 100%;
   padding: 0;
@@ -707,7 +724,9 @@ h1 {
   background-color: #f3f3f3;
 }
 
-/* footer */
+/*=========================
+ footer
+ =========================*/
 #footer .inner {
   max-width: 600px;
   margin: 0 auto;
@@ -876,9 +895,9 @@ h1 {
   }
 }
 
-/* ====================
-  特定商取引法に基づく表記
-==================== */
+/*=========================
+ 特商法 legal.html
+ =========================*/
 #legal {
   margin: 50px auto 100px ;
 }
