@@ -13,12 +13,12 @@ button:hover {
 
 /* common style */
 .c-ttl {
-  position: relative;
-  z-index: 2;
   margin-bottom: 50px;
-  font-size: 38px;
-  font-weight: bold;
-  text-align: center;
+}
+.c-ttl img {
+  width: auto;
+  height: 70px;
+  margin: auto;
 }
 .txt {
   font-size: 16px;
@@ -84,46 +84,6 @@ button:hover {
 }
 .bg-beige#co {
   position: relative;
-}
-
-#ab .c-ttl::before,
-#in .c-ttl::before,
-#pr .c-ttl::before,
-#fl .c-ttl::before,
-#co .c-ttl::before,
-#qa .c-ttl::before {
-  position: absolute;
-  left: 50%;
-  top: -40px;
-  transform: translateX(-50%);
-  z-index: -1;
-  font-size: 60px;
-  letter-spacing: -3px;
-}
-
-#ab .c-ttl::before {
-  content: 'ABOUT';
-  color: #f4e7d8;
-}
-#in .c-ttl::before {
-  content: 'INTERVIEW';
-  color: #f9f4ec;
-}
-#pr .c-ttl::before {
-  content: 'PRICE';
-  color: #e0e0e0;
-}
-#fl .c-ttl::before {
-  content: 'FLOW';
-  color: #f9f4ec;
-}
-#co .c-ttl::before {
-  content: 'CONTACT';
-  color: #f4e7d8;
-}
-#qa .c-ttl::before {
-  content: 'FAQ';
-  color: #fff0f3;
 }
 
 .wrap::before,
@@ -222,7 +182,9 @@ button:hover {
   }
   .c-ttl {
     margin-bottom: 20px;
-    font-size: 24px;
+  }
+  .c-ttl img {
+    max-height: 50px;
   }
   #ab .c-ttl::before,
   #in .c-ttl::before,
