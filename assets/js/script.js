@@ -53,14 +53,14 @@ let nav = document.querySelector('#js-nav');
 let menu = document.querySelectorAll(".js-li");
 
 
-ham.addEventListener('click', function () {
+ham.addEventListener('click', () => {
 
   ham.classList.toggle('active');
   nav.classList.toggle('active');
 });
 
 for (let i = 0; i < menu.length; i++) {
-  menu[i].addEventListener('click', function () {
+  menu[i].addEventListener('click', () => {
     ham.click();
   });
   console.log('click');
