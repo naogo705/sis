@@ -165,10 +165,10 @@ button:hover {
 
 @media screen and (max-width: 768px) {
   p {
-    font-size: 14px;
+    font-size: 15px;
   }
   .txt {
-    font-size: 14px;
+    font-size: 16px;
   }
   .inner1000 {
     padding: 100px 20px;
@@ -537,6 +537,7 @@ h1 {
   line-height: 1.4;
   color: #545149;
   text-align: center;
+  white-space: nowrap;
 }
 
 /*=========================
@@ -855,10 +856,11 @@ h1 {
     content: none;
   }
   #ab .point li:first-child::after {
-    right: 0;
+    right: -20px;
   }
   #ab .point li:last-child::after {
-    left: 0;
+    left: -20px;
+    bottom: -110px;
   }
   #ab .point div > p:first-child img {
     width: auto;
