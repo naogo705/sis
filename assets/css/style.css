@@ -732,8 +732,6 @@ h1 {
   transform: rotate(135deg);
   transition:.5s;
 }
-#qa ul.active { overflow-y: auto; }
-
 #qa ul li {
   position: relative;
   margin: 10px 0;
