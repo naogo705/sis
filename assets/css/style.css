@@ -910,10 +910,10 @@ h1 {
     padding: 15px 15px 15px 35px;
   }
   #qa button::before {
-    right: 15px;
+    right: 5px;
   }
   #qa button::after {
-    right: 10px;
+    right: 0;
   }
   #qa .acc > li::before, #qa .acc > li > ul > li::before {
     font-size: 30px;
