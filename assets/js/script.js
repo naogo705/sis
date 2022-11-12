@@ -1,14 +1,14 @@
 // accrodion
 const slideDown = (el) => {
-    el.style.height = 'auto';
-    let h = el.offsetHeight;
-    el.style.height = h + 'px';
-    el.animate([
-      { height: 0 },
-      { height: h + 'px' }
-    ], {
-      duration: 300,
-     });
+  el.style.height = 'auto';
+  let h = el.offsetHeight;
+  el.style.height = h + 'px';
+  el.animate([
+    { height: 0 },
+    { height: h + 'px' }
+  ], {
+    duration: 300,
+  });
 };
 
 const slideUp = (el) => {
@@ -25,9 +25,9 @@ accordions.forEach((accordion) => {
       activeIndex = index;
       e.target.parentNode.classList.toggle('active');
       const content = accordionBtn.nextElementSibling;
-      if(e.target.parentNode.classList.contains('active')){
+      if (e.target.parentNode.classList.contains('active')) {
         slideDown(content);
-      }else{
+      } else {
         slideUp(content);
       }
       accordionBtns.forEach((accordionBtn, index) => {
@@ -38,9 +38,9 @@ accordions.forEach((accordion) => {
         }
       });
       let container = accordion.closest('.scroll-control');
-      if(accordionBtn.parentNode.classList.contains('active') == false && container !== null ){
+      if (accordionBtn.parentNode.classList.contains('active') == false && container !== null) {
         container.classList.remove('active')
-      }else if (container !== null){
+      } else if (container !== null) {
         container.classList.add('active')
       }
     });
@@ -69,11 +69,11 @@ for (let i = 0; i < menu.length; i++) {
 // アニメーション
 let fadeInTarget = document.querySelectorAll('.js-fade-in');
 window.addEventListener('scroll', () => {
-  for (let i = 0; i < fadeInTarget.length; i++){
+  for (let i = 0; i < fadeInTarget.length; i++) {
     const rect = fadeInTarget[i].getBoundingClientRect().top;
     const scroll = window.pageYOffset || document.documentElement.scrollTop;
     const offset = rect + scroll;
-    const windowHeight = window.innerHeight; 
+    const windowHeight = window.innerHeight;
     if (scroll > offset - windowHeight + 150) {
       fadeInTarget[i].classList.add('scroll-in');
     }
