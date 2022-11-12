@@ -394,8 +394,9 @@ header h2 a {
 
 /*----- wrap -----*/
 .wrap {
-  width: 100%;
   posiiton: relative;
+  width: 100%;
+  overflow: hidden;
 }
 /*=========================
  kv
