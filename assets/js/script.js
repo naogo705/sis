@@ -65,3 +65,17 @@ for (let i = 0; i < menu.length; i++) {
   });
   console.log('click');
 }
+
+// アニメーション
+let fadeInTarget = document.querySelectorAll('.js-fade-in');
+window.addEventListener('scroll', () => {
+  for (let i = 0; i < fadeInTarget.length; i++){
+    const rect = fadeInTarget[i].getBoundingClientRect().top;
+    const scroll = window.pageYOffset || document.documentElement.scrollTop;
+    const offset = rect + scroll;
+    const windowHeight = window.innerHeight; 
+    if (scroll > offset - windowHeight + 150) {
+      fadeInTarget[i].classList.add('scroll-in');
+    }
+  }
+});
