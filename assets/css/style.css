@@ -863,6 +863,9 @@ h1 {
     left: -20px;
     bottom: -110px;
   }
+  #ab .point div {
+    padding: 50px 50px 90px;
+  }
   #ab .point div > p:first-child img {
     width: auto;
     height: 20px;
